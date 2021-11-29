@@ -1,0 +1,19 @@
+begin %SET%
+
+CREATE_VIEW Woods_Winter_Call_List
+
+SELECT1 f.name, f.phone
+
+FROM1 forager AS f
+
+WHERE1 f.season = "all"
+
+INTUNION UNION
+
+SELECT2 f.name, f.phone
+
+FROM2 forager AS f
+
+WHERE2 f.season = "winter"
+
+end %SET%

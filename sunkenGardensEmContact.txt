@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW sunkenGardensEmContacts
+
+SELECT f.emC
+
+FROM forager as f,habitat as h
+
+WHERE h.type=f.hab, h.n="sunken_gardens"
+
+end %basic%

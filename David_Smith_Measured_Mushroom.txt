@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW David_Smith_Measured_Mushroom
+
+SELECT id, clfn
+
+FROM Mush
+
+WHERE cap_d = 1.51, cap_sh = "flat", cap_su="wrinkled", cap_co="gray",bruise="no",stem_h=5.2,stem_w=2.57,stem_c="white",has_ring="no",ring_type="none",hab="grasses",szn="winter"
+
+end %basic%

@@ -1,0 +1,15 @@
+begin %SET%
+
+CREATE_VIEW JenniferFriends
+
+SELECT1 n,ph
+FROM1 forager
+WHERE1 hab = "waste"
+
+INTUNION UNION
+
+SELECT2 n,ph
+FROM2 forager
+WHERE2 hab = "grasses"
+
+end %SET%

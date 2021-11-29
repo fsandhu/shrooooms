@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW GraceAllen_Paths_Rep
+
+SELECT h.name, o.mushroomRep, o.phone
+
+FROM habitat AS h, organization AS o
+
+WHERE h.type = "path", h.managerId = o.id
+
+end %basic%

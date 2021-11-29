@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW DavidSmith_Emergency_Contact
+
+SELECT f.emergencyContact
+
+FROM forager AS f
+
+WHERE f.name = "David_Smith"
+
+end %basic%

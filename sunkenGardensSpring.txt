@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW sunkenGardensSpringtime
+
+SELECT m.id
+
+FROM Mush as m, habitat as h
+
+WHERE h.type=m.hab, h.n="sunken_gardens", m.szn="spring"
+
+end %basic%

@@ -1,0 +1,19 @@
+begin %SET%
+
+CREATE_VIEW Summer_Fall_Leaves_Edible
+
+SELECT1 id, clfn, hab, szn
+
+FROM1 Mush
+
+WHERE1 clfn = "edible", hab = "leaves", szn = "autumn"
+
+INTUNION UNION
+
+SELECT2 id, clfn, hab, szn
+
+FROM2 Mush
+
+WHERE2 clfn = "edible", hab = "leaves", szn = "summer"
+
+end %SET%

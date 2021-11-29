@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW landfill_call_list_landslide
+
+SELECT f.n,f.ph
+
+FROM forager as f
+
+WHERE hab="waste"
+
+end %basic%
